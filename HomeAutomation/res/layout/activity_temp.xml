@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     tools:context=".FtdiManager">
+<LinearLayout 
+    android:id="@+id/commonLayout"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FtdiManager" 
+    android:orientation="horizontal"
+     android:background="#065A9D">
+
+ 	<LinearLayout
+ 	    android:id="@+id/leftpane"
+ 	    android:layout_width="0dip"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_weight="1"
+ 	    android:orientation="vertical"
+ 	    android:paddingBottom="@dimen/activity_vertical_margin"
+ 	    android:paddingLeft="@dimen/activity_horizontal_margin"
+ 	    android:paddingRight="@dimen/activity_horizontal_margin"
+ 	    android:paddingTop="@dimen/activity_vertical_margin" >
+
+ 	    <RelativeLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent"
+ 	        android:layout_weight="1"
+ 	        android:paddingBottom="@dimen/activity_vertical_margin"
+ 	        android:paddingLeft="@dimen/activity_horizontal_margin"
+ 	        android:paddingRight="@dimen/activity_horizontal_margin"
+ 	        android:paddingTop="@dimen/activity_vertical_margin"
+ 	        tools:context=".FtdiManager" >
+
+ 	        <TextView
+ 	            android:id="@+id/date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_margin="10dp"
+ 	            android:background="@drawable/date_header"
+ 	            android:paddingBottom="10dp"
+ 	            android:paddingLeft="20dp"
+ 	            android:paddingTop="10dp"
+ 	            android:textColor="#FFF"
+ 	            android:textSize="20sp"
+ 	            android:layout_alignParentLeft="true" />
+
+ 	        <TextView
+ 	            android:id="@+id/cityText1"
+ 	            style="?android:attr/textAppearanceMedium"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_alignParentLeft="true" >
+ 	        </TextView>
+
+ 	        <TextView
+ 	            android:id="@+id/temp1"
+ 	            style="@style/tempStyle"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_below="@id/cityText1"
+ 	            android:layout_centerHorizontal="true" >
+ 	        </TextView>
+
+ 	        <TextView
+ 	            android:id="@+id/unittemp1"
+ 	            style="?android:attr/textAppearanceMedium"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_alignBaseline="@id/temp1"
+ 	            android:layout_below="@id/cityText1"
+ 	            android:layout_toRightOf="@id/temp1" >
+ 	        </TextView>
+
+ 	        <TextView
+ 	            android:id="@+id/skydesc1"
+ 	            style="?android:attr/textAppearanceMedium"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_alignStart="@id/temp1"
+ 	            android:layout_below="@id/temp1"
+ 	            android:layout_toRightOf="@id/temp1" >
+ 	        </TextView>
+
+ 	        <!-- Image weather condition -->
+
+ 	        <ImageView
+ 	            android:id="@+id/condIcon1"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_alignTop="@id/temp1"
+ 	            android:layout_toRightOf="@id/temp1" />
+ 	    </RelativeLayout>
+
+ 	    <android.support.v4.view.ViewPager
+ 	        android:id="@+id/leftpager"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent"
+ 	        android:layout_weight="6" >
+
+ 	       
+ 	    </android.support.v4.view.ViewPager>
+ 	</LinearLayout>
+    
+<LinearLayout 
+    android:id="@+id/rightpane"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_weight="1">
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".FtdiManager"
+	    android:layout_weight="1" >
+    
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">        
+    </TextView>
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_centerHorizontal="true">        
+    </TextView>
+    <TextView
+        android:id="@+id/unittemp"        
+        android:layout_width="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_toRightOf="@id/temp"
+        android:layout_alignBaseline="@id/temp">        
+    </TextView>
+    <TextView
+        android:id="@+id/skydesc"        
+        android:layout_width="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"        
+        android:layout_alignStart="@id/temp"
+        android:layout_toRightOf="@id/temp">
+    </TextView>
+    
+    <!--  Image weather condition -->
+    <ImageView android:id="@+id/condIcon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignTop="@id/temp"
+                android:layout_toRightOf="@id/temp"/>
+
+</RelativeLayout>
+
+<android.support.v4.view.ViewPager
+    
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="6" >
+
+    <android.support.v4.view.PagerTitleStrip
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#F59131"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#fff" />
+    
+	</android.support.v4.view.ViewPager> 	
+	</LinearLayout>
+	
+</LinearLayout>
+
+	<include
+	    android:id="@+id/drawercontainer"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_gravity="bottom"
+	    layout="@layout/slidingdrawer" />
+
+</RelativeLayout>

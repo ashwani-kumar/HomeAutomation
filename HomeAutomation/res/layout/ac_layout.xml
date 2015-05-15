@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <Button
+          android:id="@+id/ac_temp_16"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_switch"
+          android:layout_alignBottom="@+id/ac_switch"
+          android:layout_toRightOf="@+id/ac_switch"
+          android:background="@drawable/button_selector"
+          android:text="@string/t16" />
+
+      <Button
+          android:id="@+id/ac_temp_20"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_16"
+          android:layout_alignBottom="@+id/ac_temp_16"
+          android:layout_marginLeft="17dp"
+          android:layout_toRightOf="@+id/ac_temp_16"
+          android:background="@drawable/button_selector"
+          android:text="@string/t20" />
+
+      <Button
+          android:id="@+id/ac_temp_24"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_20"
+          android:layout_alignBottom="@+id/ac_temp_20"
+          android:layout_marginLeft="18dp"
+          android:layout_toRightOf="@+id/ac_temp_20"
+          android:background="@drawable/button_selector"
+          android:text="@string/t24" />
+
+      <Button
+          android:id="@+id/ac_temp_28"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_24"
+          android:layout_alignBottom="@+id/ac_temp_24"
+          android:layout_marginLeft="17dp"
+          android:layout_toRightOf="@+id/ac_temp_24"
+          android:background="@drawable/button_selector"
+          android:text="@string/t28" />
+
+      <Button
+          android:id="@+id/ac_FN1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ac_switch"
+          android:layout_toLeftOf="@+id/ac_temp_20"
+          android:background="@drawable/button_selector"
+          android:text="@string/fn1" />
+
+      <Button
+          android:id="@+id/ac_FN2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ac_switch"
+          android:layout_toLeftOf="@+id/ac_temp_24"
+          android:background="@drawable/button_selector"
+          android:text="@string/fn2" />
+
+      <Button
+          android:id="@+id/ac_FN3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_FN2"
+          android:layout_alignBottom="@+id/ac_FN2"
+          android:layout_alignLeft="@+id/ac_temp_24"
+          android:background="@drawable/button_selector"
+          android:text="@string/fn3" />
+
+      <TextView
+          android:id="@+id/ac_fan"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_FN1"
+          android:layout_alignBottom="@+id/ac_FN1"
+          android:layout_alignLeft="@+id/ac_switch"
+          android:layout_marginLeft="14dp"
+          android:text="@string/ac_fanspeed" />
+
+      <ToggleButton
+          android:id="@+id/ac_switch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toRightOf="@+id/ac_name"
+          android:background="@drawable/switch_selector"
+          android:textOn=""
+          android:textOff="" />
+
+      <TextView
+          android:id="@+id/ac_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignTop="@+id/ac_temp_16"
+          android:layout_marginLeft="18dp"
+          android:text="@string/ac_name" />
+
+</RelativeLayout>

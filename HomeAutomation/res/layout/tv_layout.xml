@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_name" />
+
+            <ToggleButton
+                android:id="@+id/tv_power_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_selector1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textOff="OFF"
+                android:textOn="ON" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="32dp" />
+
+            <ToggleButton
+                android:id="@+id/tv_mute_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_selector1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textOff="VOL"
+                android:textOn="MUTE" />
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout android:orientation="horizontal"          
+		  android:layout_width="fill_parent"          
+		  android:layout_height="wrap_content"          
+		  android:layout_gravity="center"         
+		  android:gravity="center"         
+		  android:paddingTop="20dp">
+		  
+		  <Button         
+		  android:layout_width="55dp"      
+		  android:layout_height="wrap_content" 
+		  android:layout_marginRight="20dp" 
+		  android:id="@+id/seven"          
+		  android:text="@string/_7"
+		  android:background="@drawable/button_selector" />
+		  
+          <Button         
+		  android:layout_width="55dp"    
+		  android:layout_height="wrap_content"
+		  android:layout_marginRight="20dp"   
+		  android:id="@+id/eight"  
+		  android:background="@drawable/button_selector"      
+		  android:text="@string/_8" />         
+
+		  <Button          
+		  android:layout_width="55dp"         
+		  android:layout_height="wrap_content"
+          android:id="@+id/nine"   
+          android:background="@drawable/button_selector"      
+		  android:text="@string/_9"/> 
+
+		  </LinearLayout>          
+		  
+		  <LinearLayout android:orientation="horizontal"     
+		  android:layout_width="fill_parent"
+          android:layout_height="wrap_content"    
+		  android:layout_gravity="center"         
+		  android:gravity="center"         
+		  android:paddingTop="20dp">       
+
+		  <Button       
+		  android:layout_width="55dp"   
+		  android:layout_height="wrap_content"  
+		   android:background="#1875d2"
+		  android:layout_marginRight="20dp"
+		  android:id="@+id/four"         
+		  android:text="@string/_4" />     
+		  
+		  <Button          
+		  android:layout_width="55dp"  
+		  android:layout_height="wrap_content"
+		  android:layout_marginRight="20dp"  
+		  android:id="@+id/five"   
+		  android:background="@drawable/button_selector"      
+		  android:text="@string/_5"/>         
+
+		  <Button         
+		  android:layout_width="55dp"  
+		  android:layout_height="wrap_content" 
+		  android:id="@+id/six"     
+		  android:background="@drawable/button_selector"     
+		  android:text="@string/_6"/>        
+
+		  </LinearLayout>          
+		  
+		  <LinearLayout 
+		  android:orientation="horizontal" 
+		  android:layout_width="fill_parent"   
+		  android:layout_height="wrap_content" 
+		  android:layout_gravity="center"       
+		  android:gravity="center"         
+		  android:paddingTop="20dp">       
+
+		  <Button        
+		  android:layout_width="55dp"  
+		  android:layout_height="wrap_content"  
+		  android:layout_marginRight="20dp"  
+		  android:id="@+id/one"   
+		  android:background="@drawable/button_selector"      
+		  android:text="@string/_1"/>      
+
+		  <Button         
+		  android:layout_width="55dp"
+          android:layout_height="wrap_content"  
+		  android:layout_marginRight="20dp"   
+		  android:id="@+id/two"          
+		  android:background="@drawable/button_selector"
+		  android:text="@string/_2"/>  
+		  
+		  <Button         
+		  android:layout_width="55dp" 
+		  android:layout_height="wrap_content"  
+		  android:id="@+id/three"      
+		  android:background="@drawable/button_selector"  
+		  android:text="@string/_3"/>        
+
+		  </LinearLayout>          
+		  
+		  <LinearLayout android:orientation="horizontal"
+          android:layout_width="fill_parent"         
+		  android:layout_height="wrap_content"         
+		  android:layout_gravity="center"         
+		  android:gravity="center"          
+		  android:paddingTop="20dp">         
+
+		  <Button         
+		  android:layout_width="55dp"   
+		  android:layout_height="wrap_content" 
+		  android:layout_marginRight="20dp"  
+		  android:id="@+id/vup"       
+		  android:background="@drawable/button_selector"   
+		  android:text="@string/vup"/> 
+
+		  <Button 
+		  android:layout_width="55dp"    
+		  android:layout_height="wrap_content" 
+		  android:layout_marginRight="20dp"
+		  android:id="@+id/zero"       
+		  android:background="@drawable/button_selector"  
+		  android:text="@string/_0"          />    
+
+		  <Button        
+		  android:layout_width="55dp"     
+		  android:layout_height="wrap_content"
+		  android:id="@+id/vdn"       
+		  android:background="@drawable/button_selector"  
+		  android:text="@string/vdn"          />        
+
+		  </LinearLayout>        
+
+
+</LinearLayout>

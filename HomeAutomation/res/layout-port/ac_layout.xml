@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<!-- <LinearLayout  -->
+<!--      android:id="@+id/ll1" -->
+<!--      android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:orientation="horizontal"> -->
+     
+<!-- </LinearLayout> -->
+<!-- <LinearLayout  -->
+<!--     android:id="@+id/ll2" -->
+<!--      android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:orientation="horizontal"> -->
+    
+<!-- </LinearLayout> -->
+
+      <Button
+          android:id="@+id/ac_temp_16"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_switch"
+          android:layout_alignBottom="@+id/ac_switch"
+          android:layout_toRightOf="@+id/ac_switch"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/t16" />
+
+      <Button
+          android:id="@+id/ac_temp_20"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_16"
+          android:layout_alignBottom="@+id/ac_temp_16"
+          android:layout_marginLeft="17dp"
+          android:layout_toRightOf="@+id/ac_temp_16"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/t20" />
+
+      <Button
+          android:id="@+id/ac_temp_24"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_20"
+          android:layout_alignBottom="@+id/ac_temp_20"
+          android:layout_marginLeft="18dp"
+          android:layout_toRightOf="@+id/ac_temp_20"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/t24" />
+
+      <Button
+          android:id="@+id/ac_temp_28"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_temp_24"
+          android:layout_alignBottom="@+id/ac_temp_24"
+          android:layout_marginLeft="17dp"
+          android:layout_toRightOf="@+id/ac_temp_24"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/t28" />
+
+      <Button
+          android:id="@+id/ac_FN1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ac_switch"
+          android:layout_toLeftOf="@+id/ac_temp_20"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/fn1" />
+
+      <Button
+          android:id="@+id/ac_FN2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ac_switch"
+          android:layout_toLeftOf="@+id/ac_temp_24"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/fn2" />
+
+      <Button
+          android:id="@+id/ac_FN3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_FN2"
+          android:layout_alignBottom="@+id/ac_FN2"
+          android:layout_alignLeft="@+id/ac_temp_24"
+          android:background="@android:color/holo_orange_dark"
+          android:text="@string/fn3" />
+
+      <TextView
+          android:id="@+id/ac_fan"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_FN1"
+          android:layout_alignBottom="@+id/ac_FN1"
+          android:layout_alignLeft="@+id/ac_switch"
+          android:layout_marginLeft="14dp"
+          android:text="@string/ac_fanspeed" />
+
+      <TextView
+          android:id="@+id/ac_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/ac_switch"
+          android:layout_alignBottom="@+id/ac_switch"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="33dp"
+          android:text="@string/ac_name" />
+
+      <ToggleButton
+          android:id="@+id/ac_switch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="16dp"
+          android:layout_toRightOf="@+id/ac_name"
+          android:background="@drawable/switch_selector" />
+
+</RelativeLayout>

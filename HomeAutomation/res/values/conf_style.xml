@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="ToggleImageButton">
+        <attr name="android:scaleType" />
+        <attr name="android:height" />
+        <attr name="android:width" />
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="android:layout_weight" />
+        <attr name="android:id" />
+        <attr name="checked" format="integer" />
+        <attr name="unchecked" format="integer" />
+        <attr name="bgdrawables" format="boolean" />
+   </declare-styleable>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HomeAutomation</string>
+    <string name="title_area_detail">Area Detail</string>
+    <string name="light">Light</string>
+    <string name="fan">Fan</string>
+    <string name="ac">AC</string>
+    <string name="tv">TV</string>
+    <string name="saperator">saperator</string>
+    <string name="all_lights">All On/Off</string>
+    <string name="area_logo">area logo</string>
+    <string name="control_list_header">control list header</string>
+    <string name="lighting_controls">Lighting Controls</string>
+    <string name="sliding_drawer">sliding drawer</string>
+    <string name="handle">handle</string>
+    <string name="light_control">Lighting Controls</string>
+    <string name="table_row">table row</string>
+    <string name="Switch_menu">Switch Menu</string>
+    <string name="tv_name">TV Name</string>
+     <string name="settop">Settop Box</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="vdn">V-</string>
+    <string name="vup">V+</string>
+    <string name="_0">0</string>
+    <string name="ac_name">AC Name</string>
+    <string name="t16">16</string>
+    <string name="t20">20</string>
+    <string name="t24">24</string>
+    <string name="t28">28</string>
+    <string name="fn1">1</string>
+    <string name="fn2">2</string>
+    <string name="fn3">3</string>
+    <string name="ac_fanspeed">Fan Speed</string>
+    
+    
+    
+    <string name="fan_name">Fan Name</string>
+    <string name="speed">Speed</string>
+    <string name="light_name">Light Name</string>
+    <string name="Scene">Scene</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#065A9D" >
+    
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/date_header"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+        <fragment
+            android:id="@+id/area_list"
+            android:name="com.home.automation.AreaListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        	android:layout_below="@id/date"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+        
+<!--     </ScrollView> -->
+
+    <include android:id="@+id/drawercontainer"
+        layout="@layout/slidingdrawer"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"/>
+    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:background="#ffa500"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+        
+</LinearLayout>
+
+</RelativeLayout>
+

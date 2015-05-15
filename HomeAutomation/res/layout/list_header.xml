@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_display_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#065A9D" >
+
+    <ImageView
+        android:id="@+id/controlImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/light"
+        android:paddingTop="10dp"
+        android:src="@drawable/light1_01" />
+
+    <TextView
+        android:id="@+id/control_display_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/light_control" />
+
+    <ImageView
+        android:id="@+id/control_sperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/saperator"
+        android:src="@drawable/orange_bar" />
+</LinearLayout>
+    
+
